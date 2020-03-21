@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584829174951.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3638753097",
+    "id" : "24539E15",
+    "lastKnownWriteTime" : 1584831288,
+    "last_content_update" : 1584831288161,
+    "path" : "~/Packages/repositories/cuser/R/cuser.r",
+    "project_path" : "R/cuser.r",
+    "properties" : {
+        "cursorPosition" : "32,47",
+        "scrollLine" : "19"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

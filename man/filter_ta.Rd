@@ -4,7 +4,14 @@
 \alias{filter_ta}
 \title{Clean, Filter, & Order DSS Temporary Assistance Data}
 \usage{
-filter_ta(data, tracts = 1, cases = 2, individuals = 3)
+filter_ta(
+  data,
+  tracts = 1,
+  cases = 2,
+  individuals = 3,
+  date = NA,
+  format = TRUE
+)
 }
 \arguments{
 \item{data}{A tabular object of class \code{data.frame} containing
@@ -21,6 +28,19 @@ argument \code{data =} which contains the table's TA cases. Defaults to
 \item{individuals}{The column number of the \code{data.frame} object passed
 to argument \code{data =} which contains the table's TA-assisted
 individuals. Defaults to \code{3}.}
+
+\item{date}{Accepts a character value of any format (in quotations) to
+provide the month during which temporary assistance data were recorded.
+Defaults to \code{NA}.}
+
+\item{format}{Accepts a logical \code{TRUE} or \code{FALSE}. If \code{FALSE},
+a "long" table is returned with \code{cases} and \code{individuals} as
+separate variables. If \code{TRUE}, a "tidy" table is returned, doubling
+total rows and gathering \code{cases} and \code{individuals} into a single
+column: \code{indicator}, variable \code{date} is included, overriding
+argument \code{date =} if \code{FALSE}, and reordering variables to match
+the same variable order as the Syracuse Poverty Index. Defaults to
+\code{TRUE}.}
 }
 \value{
 A tabular object of class \code{data.frame} containing only DSS TA
