@@ -1,0 +1,22 @@
+#' Validation Tables: Five Variants of 55 Syracuse, NY Census Tracts
+#'
+#' \code{tracts} is a validation table containing five unique variations
+#' of 55 Syracuse, NY census tracts, from full-length FIPS IDs to labeled
+#' and abbreviated formats. These data are provided openly in package
+#' \code{cuser} for reference and other megring purposes.
+#'
+#' @format A data frame with 55 rows and 5 columns.
+#'
+#' @details Variable \code{full_ct} contains the full Federal Information
+#' Processing Standard Publication 6-4 (FIPS) GEOID.  Variables
+#' \code{trim_ct}, \code{dec_ct}, and \code{int_ct} contain census tract
+#' formats with trailing zeroes and no decimals, decimals and trailing
+#' zeroes, and decimals without trailing zeroes, respectively. Lastly,
+#' \code{lab_ct} contains labeled decimal values sans trailing zeroes and
+#' prefaced with \code{CT}.
+#'
+#' @source Central New York Community Foundation & U.S. Census Bureau
+
+
+
+"tracts"
