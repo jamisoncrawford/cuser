@@ -51,7 +51,7 @@ filter_ta <- function(data, tracts = 1, cases = 2, individuals = 3){
 
   if (!is.data.frame(data)){stop(error_df, call. = F)}
 
-  tracts <- load("data/tracts.rdata")
+  tracts <- readRDS("sysdata.rds")
 
   names(tracts)[1] <- "geoid"
 
@@ -139,14 +139,14 @@ expand_ct <- function(tracts, order = TRUE, duplicate.rm = FALSE, na.rm = TRUE){
 
   if(!is.vector(tracts)){stop(error_vct, call. = F)}
 
-  tracts <- load("data/tracts.rdata")
+  geoid <- readRDS("sysdata.rds")
 
   trc <- tracts
   ord <- order
   dup <- duplicate.rm
   nar <- na.rm
 
-  all <- tracts
+  all <- geoid
 
   full <- sum(all$full_ct %in% trc, T)
   trim <- sum(all$trim_ct %in% trc, T)

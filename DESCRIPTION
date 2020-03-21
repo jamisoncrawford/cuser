@@ -1,7 +1,7 @@
 Package: cuser
 Type: Package
 Title: Streamline processing for Syracuse-specific data
-Version: 0.1.0
+Version: 1.0.0
 Author: Jamison R. Crawford, MPA
 Maintainer: Jamison R. Crawford, MPA <jamisoncrawford@gmail.com>
 Description: Package `cuser` streamlines data preprocessing tasks in working with census tracts. Functions may be useful for other projects but some are designed specifically for streamlining data ingestion for the Syracuse Poverty Index.
