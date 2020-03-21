@@ -36,13 +36,11 @@ In order to install and load the `cuser` package in R, use function `install_git
 from package `devtools`. The following code should work:
 
 ```
-
 if(!require(devtools)){install.packages("devtools")}
 library(devtools)
 
 install_github("jamisoncrawford/cuser")
 library(cuser)
-
 ```
 
 <br>
@@ -53,11 +51,8 @@ Use function `help()` or the `?` operator to read internal package documentation
 package `cuser` functions. For example:
 
 ```
-
 help(filter_ta)
-
-?expand_ct
-
+help(expand_ct)
 ```
 
 <br>
