@@ -139,14 +139,12 @@ expand_ct <- function(tracts, order = TRUE, duplicate.rm = FALSE, na.rm = TRUE){
 
   if(!is.vector(tracts)){stop(error_vct, call. = F)}
 
-  geoid <- readRDS("sysdata.rds")
+  all <- readRDS("sysdata.rds")
 
   trc <- tracts
   ord <- order
   dup <- duplicate.rm
   nar <- na.rm
-
-  all <- geoid
 
   full <- sum(all$full_ct %in% trc, T)
   trim <- sum(all$trim_ct %in% trc, T)
@@ -164,7 +162,7 @@ expand_ct <- function(tracts, order = TRUE, duplicate.rm = FALSE, na.rm = TRUE){
                                 intg,
                                 labl))
 
-  col <- names(all[, index])
+  col <- names(all)[index]
 
   trc <- data.frame(trc,
                     stringsAsFactors = FALSE)
