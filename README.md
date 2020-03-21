@@ -69,8 +69,9 @@ The following provides new versions, patch notes, and record dates:
 
 ## Contributors
 
-[**Jamison Crawford, MPA**](linkedin.com/in/jamisoncrawford) is a data science 
-consultant for the [**Central New York Community Foundation**](cnycf.org) and 
-is the developer and maintainer of `cuser`.
+[**Jamison Crawford, MPA**](http://www.linkedin.com/in/jamisoncrawford) is a 
+data science consultant for the 
+[**Central New York Community Foundation**](https://www.cnycf.org) and is the 
+developer and maintainer of `cuser`.
 
 [**Contact Jamison**](mailto:jamisoncrawford@gmail.com).
