@@ -16,8 +16,12 @@ Function `filter_ta()` processes tables of class `data.frame` by filtering data
 exlusively to the 55 census tracts within Syracuse, NY, and ordering values 
 according to Federal Information Processing Standard Publication 6-4 (FIPS) GEOID.
 
-Lastly, `filter_ta()` presevres census tracts which exclude Temporary Assistance 
+Also, `filter_ta()` preserves census tracts which exclude Temporary Assistance 
 (TA) data that are not reported by Onondaga County Department of Social Services (DSS).
+
+Lastly, `filter_ta()` may include a date variable in any format, as well as automatically 
+format temporary assistance cases and individuals as "tidy" format in the same order 
+as ingested by the Syracuse Poverty Index.
 
 <br>
 
