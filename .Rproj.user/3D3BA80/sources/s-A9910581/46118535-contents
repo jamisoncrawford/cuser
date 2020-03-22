@@ -1,4 +1,0 @@
-library(readxl)
-dss <- read_excel("Ridzi_3_3_20.xlsx")
-x <- filter_ta(data = dss, date = "2020-03-01")
-write.csv(x, "x.csv")
